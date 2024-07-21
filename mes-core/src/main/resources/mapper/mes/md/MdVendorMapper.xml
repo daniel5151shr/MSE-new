@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qst.mes.core.md.mapper.MdVendorMapper">
+    
+    <resultMap type="MdVendor" id="MdVendorResult">
+        <result property="vendorId"    column="vendor_id"    />
+        <result property="vendorCode"    column="vendor_code"    />
+        <result property="vendorName"    column="vendor_name"    />
+        <result property="vendorDes"    column="vendor_des"    />
+        <result property="vendorLevel"    column="vendor_level"    />
+        <result property="vendorScore"    column="vendor_score"    />
+        <result property="address"    column="address"    />
+        <result property="contact"    column="contact"    />
+        <result property="phoneNumber"    column="phone_number"    />
+        <result property="creditCode"    column="credit_code"    />
+        <result property="enableFlag"    column="enable_flag"    />
+        <result property="createBy"    column="create_by"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateBy"    column="update_by"    />
+        <result property="updateTime"    column="update_time"    />
+    </resultMap>
+
+    <sql id="selectMdVendorVo">
+        select vendor_id, vendor_code, vendor_name, vendor_des, vendor_level, vendor_score, address, contact, phone_number, credit_code, enable_flag, create_by, create_time, update_by, update_time from md_vendor
+    </sql>
+
+    <select id="selectMdVendorList" parameterType="MdVendor" resultMap="MdVendorResult">
+        <include refid="selectMdVendorVo"/>
+        <where>  
+            <if test="vendorCode != null  and vendorCode != ''"> and vendor_code like concat('%', #{vendorCode}, '%')</if>
+            <if test="vendorName != null  and vendorName != ''"> and vendor_name like concat('%', #{vendorName}, '%')</if>
+            <if test="vendorDes != null  and vendorDes != ''"> and vendor_des = #{vendorDes}</if>
+            <if test="vendorLevel != null  and vendorLevel != ''"> and vendor_level = #{vendorLevel}</if>
+            <if test="vendorScore != null "> and vendor_score = #{vendorScore}</if>
+            <if test="address != null  and address != ''"> and address = #{address}</if>
+            <if test="contact != null  and contact != ''"> and contact = #{contact}</if>
+            <if test="phoneNumber != null  and phoneNumber != ''"> and phone_number = #{phoneNumber}</if>
+            <if test="creditCode != null  and creditCode != ''"> and credit_code = #{creditCode}</if>
+            <if test="enableFlag != null  and enableFlag != ''"> and enable_flag = #{enableFlag}</if>
+        </where>
+    </select>
+    
+    <select id="selectMdVendorByVendorId" parameterType="Long" resultMap="MdVendorResult">
+        <include refid="selectMdVendorVo"/>
+        where vendor_id = #{vendorId}
+    </select>
+        
+    <insert id="insertMdVendor" parameterType="MdVendor" useGeneratedKeys="true" keyProperty="vendorId">
+        insert into md_vendor
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="vendorCode != null and vendorCode != ''">vendor_code,</if>
+            <if test="vendorName != null and vendorName != ''">vendor_name,</if>
+            <if test="vendorDes != null">vendor_des,</if>
+            <if test="vendorLevel != null">vendor_level,</if>
+            <if test="vendorScore != null">vendor_score,</if>
+            <if test="address != null">address,</if>
+            <if test="contact != null">contact,</if>
+            <if test="phoneNumber != null">phone_number,</if>
+            <if test="creditCode != null">credit_code,</if>
+            <if test="enableFlag != null and enableFlag != ''">enable_flag,</if>
+            <if test="createBy != null">create_by,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateBy != null">update_by,</if>
+            <if test="updateTime != null">update_time,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="vendorCode != null and vendorCode != ''">#{vendorCode},</if>
+            <if test="vendorName != null and vendorName != ''">#{vendorName},</if>
+            <if test="vendorDes != null">#{vendorDes},</if>
+            <if test="vendorLevel != null">#{vendorLevel},</if>
+            <if test="vendorScore != null">#{vendorScore},</if>
+            <if test="address != null">#{address},</if>
+            <if test="contact != null">#{contact},</if>
+            <if test="phoneNumber != null">#{phoneNumber},</if>
+            <if test="creditCode != null">#{creditCode},</if>
+            <if test="enableFlag != null and enableFlag != ''">#{enableFlag},</if>
+            <if test="createBy != null">#{createBy},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateBy != null">#{updateBy},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+         </trim>
+    </insert>
+
+    <update id="updateMdVendor" parameterType="MdVendor">
+        update md_vendor
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="vendorCode != null and vendorCode != ''">vendor_code = #{vendorCode},</if>
+            <if test="vendorName != null and vendorName != ''">vendor_name = #{vendorName},</if>
+            <if test="vendorDes != null">vendor_des = #{vendorDes},</if>
+            <if test="vendorLevel != null">vendor_level = #{vendorLevel},</if>
+            <if test="vendorScore != null">vendor_score = #{vendorScore},</if>
+            <if test="address != null">address = #{address},</if>
+            <if test="contact != null">contact = #{contact},</if>
+            <if test="phoneNumber != null">phone_number = #{phoneNumber},</if>
+            <if test="creditCode != null">credit_code = #{creditCode},</if>
+            <if test="enableFlag != null and enableFlag != ''">enable_flag = #{enableFlag},</if>
+            <if test="createBy != null">create_by = #{createBy},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+        </trim>
+        where vendor_id = #{vendorId}
+    </update>
+
+    <delete id="deleteMdVendorByVendorId" parameterType="Long">
+        delete from md_vendor where vendor_id = #{vendorId}
+    </delete>
+
+    <delete id="deleteMdVendorByVendorIds" parameterType="String">
+        delete from md_vendor where vendor_id in 
+        <foreach item="vendorId" collection="array" open="(" separator="," close=")">
+            #{vendorId}
+        </foreach>
+    </delete>
+</mapper>

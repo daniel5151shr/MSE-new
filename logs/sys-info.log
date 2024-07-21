@@ -1,0 +1,119 @@
+11:51:55.220 [restartedMain] INFO  c.q.m.MESApplication - [logStarting,55] - Starting MESApplication using Java 17.0.11 on DANIEL with PID 4608 (C:\Users\75780\Desktop\歌尔\qst-mes-server-mysql\mes-admin\target\classes started by 75780 in C:\Users\75780\Desktop\歌尔\qst-mes-server-mysql)
+11:51:55.225 [restartedMain] INFO  c.q.m.MESApplication - [logStartupProfileInfo,681] - The following 1 profile is active: "druid"
+11:51:55.232 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+11:51:57.130 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+11:51:57.130 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:51:57.130 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+11:51:57.208 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:51:58.531 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,998] - {dataSource-1} inited
+11:52:00.519 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+11:52:00.671 [restartedMain] INFO  c.q.m.MESApplication - [logStarted,61] - Started MESApplication in 5.69 seconds (JVM running for 6.518)
+11:52:00.673 [restartedMain] INFO  c.q.m.MESApplication - [main,21] - ################MES服务端启动成功################
+11:52:29.439 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:52:34.055 [schedule-pool-1] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[admin][Success][登录成功]
+12:01:55.649 [SpringApplicationShutdownHook] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+12:01:55.650 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2071] - {dataSource-1} closing ...
+12:01:55.652 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2144] - {dataSource-1} closed
+12:01:58.231 [restartedMain] INFO  c.q.m.MESApplication - [logStarting,55] - Starting MESApplication using Java 17.0.11 on DANIEL with PID 2304 (C:\Users\75780\Desktop\歌尔\qst-mes-server-mysql\mes-admin\target\classes started by 75780 in C:\Users\75780\Desktop\歌尔\qst-mes-server-mysql)
+12:01:58.232 [restartedMain] INFO  c.q.m.MESApplication - [logStartupProfileInfo,681] - The following 1 profile is active: "druid"
+12:01:58.234 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+12:01:59.672 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+12:01:59.673 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+12:01:59.673 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+12:01:59.735 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+12:02:00.700 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,998] - {dataSource-1} inited
+12:02:02.382 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+12:02:02.522 [restartedMain] INFO  c.q.m.MESApplication - [logStarted,61] - Started MESApplication in 4.513 seconds (JVM running for 5.021)
+12:02:02.524 [restartedMain] INFO  c.q.m.MESApplication - [main,21] - ################MES服务端启动成功################
+12:02:08.074 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:10:23.401 [SpringApplicationShutdownHook] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+12:10:23.403 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2071] - {dataSource-1} closing ...
+12:10:23.404 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2144] - {dataSource-1} closed
+12:10:25.861 [restartedMain] INFO  c.q.m.MESApplication - [logStarting,55] - Starting MESApplication using Java 17.0.11 on DANIEL with PID 6280 (C:\Users\75780\Desktop\歌尔\qst-mes-server-mysql\mes-admin\target\classes started by 75780 in C:\Users\75780\Desktop\歌尔\qst-mes-server-mysql)
+12:10:25.863 [restartedMain] INFO  c.q.m.MESApplication - [logStartupProfileInfo,681] - The following 1 profile is active: "druid"
+12:10:25.865 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+12:10:27.332 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+12:10:27.332 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+12:10:27.332 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+12:10:27.398 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+12:10:28.378 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,998] - {dataSource-1} inited
+12:10:30.051 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+12:10:30.189 [restartedMain] INFO  c.q.m.MESApplication - [logStarted,61] - Started MESApplication in 4.551 seconds (JVM running for 5.05)
+12:10:30.191 [restartedMain] INFO  c.q.m.MESApplication - [main,21] - ################MES服务端启动成功################
+12:14:12.377 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:19:14.722 [SpringApplicationShutdownHook] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+12:19:14.724 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2071] - {dataSource-1} closing ...
+12:19:14.726 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2144] - {dataSource-1} closed
+12:19:17.936 [restartedMain] INFO  c.q.m.MESApplication - [logStarting,55] - Starting MESApplication using Java 17.0.11 on DANIEL with PID 7864 (C:\Users\75780\Desktop\歌尔\qst-mes-server-mysql\mes-admin\target\classes started by 75780 in C:\Users\75780\Desktop\歌尔\qst-mes-server-mysql)
+12:19:17.938 [restartedMain] INFO  c.q.m.MESApplication - [logStartupProfileInfo,681] - The following 1 profile is active: "druid"
+12:19:17.942 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+12:19:19.419 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+12:19:19.419 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+12:19:19.419 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+12:19:19.486 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+12:19:20.510 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,998] - {dataSource-1} inited
+12:19:22.184 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+12:19:22.320 [restartedMain] INFO  c.q.m.MESApplication - [logStarted,61] - Started MESApplication in 4.612 seconds (JVM running for 5.116)
+12:19:22.322 [restartedMain] INFO  c.q.m.MESApplication - [main,21] - ################MES服务端启动成功################
+12:19:29.266 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:28:33.101 [Thread-5] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+12:28:33.103 [Thread-5] INFO  c.a.d.p.DruidDataSource - [close,2071] - {dataSource-1} closing ...
+12:28:33.104 [Thread-5] INFO  c.a.d.p.DruidDataSource - [close,2144] - {dataSource-1} closed
+12:28:33.298 [restartedMain] INFO  c.q.m.MESApplication - [logStarting,55] - Starting MESApplication using Java 17.0.11 on DANIEL with PID 7864 (C:\Users\75780\Desktop\歌尔\qst-mes-server-mysql\mes-admin\target\classes started by 75780 in C:\Users\75780\Desktop\歌尔\qst-mes-server-mysql)
+12:28:33.299 [restartedMain] INFO  c.q.m.MESApplication - [logStartupProfileInfo,681] - The following 1 profile is active: "druid"
+12:28:33.847 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+12:28:33.848 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+12:28:33.848 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+12:28:33.867 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+12:28:34.328 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,998] - {dataSource-2} inited
+12:28:35.266 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+12:28:35.319 [restartedMain] INFO  c.q.m.MESApplication - [logStarted,61] - Started MESApplication in 2.056 seconds (JVM running for 558.115)
+12:28:35.320 [restartedMain] INFO  c.q.m.MESApplication - [main,21] - ################MES服务端启动成功################
+12:28:39.956 [SpringApplicationShutdownHook] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+12:28:39.958 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2071] - {dataSource-2} closing ...
+12:28:39.959 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2144] - {dataSource-2} closed
+12:28:42.943 [restartedMain] INFO  c.q.m.MESApplication - [logStarting,55] - Starting MESApplication using Java 17.0.11 on DANIEL with PID 16928 (C:\Users\75780\Desktop\歌尔\qst-mes-server-mysql\mes-admin\target\classes started by 75780 in C:\Users\75780\Desktop\歌尔\qst-mes-server-mysql)
+12:28:42.945 [restartedMain] INFO  c.q.m.MESApplication - [logStartupProfileInfo,681] - The following 1 profile is active: "druid"
+12:28:42.949 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+12:28:44.502 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+12:28:44.503 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+12:28:44.503 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+12:28:44.575 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+12:28:45.641 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,998] - {dataSource-1} inited
+12:28:47.442 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+12:28:47.592 [restartedMain] INFO  c.q.m.MESApplication - [logStarted,61] - Started MESApplication in 4.902 seconds (JVM running for 5.449)
+12:28:47.594 [restartedMain] INFO  c.q.m.MESApplication - [main,21] - ################MES服务端启动成功################
+12:28:54.246 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:29:57.579 [SpringApplicationShutdownHook] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+12:29:57.581 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2071] - {dataSource-1} closing ...
+12:29:57.584 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2144] - {dataSource-1} closed
+20:21:18.923 [restartedMain] INFO  c.q.m.MESApplication - [logStarting,55] - Starting MESApplication using Java 17.0.11 on DANIEL with PID 25228 (C:\Users\75780\Desktop\歌尔\qst-mes-server-mysql\mes-admin\target\classes started by 75780 in C:\Users\75780\Desktop\歌尔\qst-mes-server-mysql)
+20:21:18.925 [restartedMain] INFO  c.q.m.MESApplication - [logStartupProfileInfo,681] - The following 1 profile is active: "druid"
+20:21:18.929 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+20:21:20.432 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+20:21:20.432 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+20:21:20.432 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+20:21:20.506 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+20:21:21.594 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,998] - {dataSource-1} inited
+20:21:23.648 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+20:21:23.809 [restartedMain] INFO  c.q.m.MESApplication - [logStarted,61] - Started MESApplication in 5.121 seconds (JVM running for 5.725)
+20:21:23.811 [restartedMain] INFO  c.q.m.MESApplication - [main,21] - ################MES服务端启动成功################
+20:21:25.812 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:23:05.466 [SpringApplicationShutdownHook] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+20:23:05.468 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2071] - {dataSource-1} closing ...
+20:23:05.470 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2144] - {dataSource-1} closed
+20:23:08.962 [restartedMain] INFO  c.q.m.MESApplication - [logStarting,55] - Starting MESApplication using Java 17.0.11 on DANIEL with PID 14656 (C:\Users\75780\Desktop\歌尔\qst-mes-server-mysql\mes-admin\target\classes started by 75780 in C:\Users\75780\Desktop\歌尔\qst-mes-server-mysql)
+20:23:08.964 [restartedMain] INFO  c.q.m.MESApplication - [logStartupProfileInfo,681] - The following 1 profile is active: "druid"
+20:23:08.968 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+20:23:10.449 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+20:23:10.449 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+20:23:10.449 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+20:23:10.521 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+20:23:11.512 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,998] - {dataSource-1} inited
+20:23:13.207 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+20:23:13.356 [restartedMain] INFO  c.q.m.MESApplication - [logStarted,61] - Started MESApplication in 4.619 seconds (JVM running for 5.124)
+20:23:13.358 [restartedMain] INFO  c.q.m.MESApplication - [main,21] - ################MES服务端启动成功################
+20:23:17.765 [http-nio-8080-exec-5] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:24:51.299 [SpringApplicationShutdownHook] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+20:24:51.301 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2071] - {dataSource-1} closing ...
+20:24:51.303 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2144] - {dataSource-1} closed

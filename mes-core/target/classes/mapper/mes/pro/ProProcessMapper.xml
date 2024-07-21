@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qst.mes.core.md.mapper.ProProcessMapper">
+    
+    <resultMap type="ProProcess" id="ProProcessResult">
+        <result property="processId"    column="process_id"    />
+        <result property="processCode"    column="process_code"    />
+        <result property="processName"    column="process_name"    />
+        <result property="attention"    column="attention"    />
+        <result property="enableFlag"    column="enable_flag"    />
+        <result property="createBy"    column="create_by"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateBy"    column="update_by"    />
+        <result property="updateTime"    column="update_time"    />
+    </resultMap>
+
+    <sql id="selectProProcessVo">
+        select process_id, process_code, process_name, attention, enable_flag, create_by, create_time, update_by, update_time from pro_process
+    </sql>
+
+    <select id="selectProProcessList" parameterType="ProProcess" resultMap="ProProcessResult">
+        <include refid="selectProProcessVo"/>
+        <where>  
+            <if test="processCode != null  and processCode != ''"> and process_code = #{processCode}</if>
+            <if test="processName != null  and processName != ''"> and process_name like concat('%', #{processName}, '%')</if>
+            <if test="attention != null  and attention != ''"> and attention = #{attention}</if>
+            <if test="enableFlag != null  and enableFlag != ''"> and enable_flag = #{enableFlag}</if>
+        </where>
+    </select>
+    
+    <select id="selectProProcessByProcessId" parameterType="Long" resultMap="ProProcessResult">
+        <include refid="selectProProcessVo"/>
+        where process_id = #{processId}
+    </select>
+        
+    <insert id="insertProProcess" parameterType="ProProcess" useGeneratedKeys="true" keyProperty="processId">
+        insert into pro_process
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="processCode != null and processCode != ''">process_code,</if>
+            <if test="processName != null and processName != ''">process_name,</if>
+            <if test="attention != null">attention,</if>
+            <if test="enableFlag != null and enableFlag != ''">enable_flag,</if>
+            <if test="createBy != null">create_by,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateBy != null">update_by,</if>
+            <if test="updateTime != null">update_time,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="processCode != null and processCode != ''">#{processCode},</if>
+            <if test="processName != null and processName != ''">#{processName},</if>
+            <if test="attention != null">#{attention},</if>
+            <if test="enableFlag != null and enableFlag != ''">#{enableFlag},</if>
+            <if test="createBy != null">#{createBy},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateBy != null">#{updateBy},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+         </trim>
+    </insert>
+
+    <update id="updateProProcess" parameterType="ProProcess">
+        update pro_process
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="processCode != null and processCode != ''">process_code = #{processCode},</if>
+            <if test="processName != null and processName != ''">process_name = #{processName},</if>
+            <if test="attention != null">attention = #{attention},</if>
+            <if test="enableFlag != null and enableFlag != ''">enable_flag = #{enableFlag},</if>
+            <if test="createBy != null">create_by = #{createBy},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+        </trim>
+        where process_id = #{processId}
+    </update>
+
+    <delete id="deleteProProcessByProcessId" parameterType="Long">
+        delete from pro_process where process_id = #{processId}
+    </delete>
+
+    <delete id="deleteProProcessByProcessIds" parameterType="String">
+        delete from pro_process where process_id in 
+        <foreach item="processId" collection="array" open="(" separator="," close=")">
+            #{processId}
+        </foreach>
+    </delete>
+</mapper>

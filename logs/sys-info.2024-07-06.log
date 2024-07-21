@@ -1,0 +1,32 @@
+22:09:13.260 [restartedMain] INFO  c.q.m.MESApplication - [logStarting,55] - Starting MESApplication using Java 17.0.11 on DANIEL with PID 116860 (C:\Users\75780\Desktop\歌尔\qst-mes-server-mysql\mes-admin\target\classes started by 75780 in C:\Users\75780\Desktop\歌尔\qst-mes-server-mysql)
+22:09:13.261 [restartedMain] INFO  c.q.m.MESApplication - [logStartupProfileInfo,681] - The following 1 profile is active: "druid"
+22:09:13.262 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+22:09:14.803 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+22:09:14.804 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:09:14.804 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+22:09:14.870 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:09:15.854 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,998] - {dataSource-1} inited
+22:09:17.604 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+22:09:17.759 [restartedMain] INFO  c.q.m.MESApplication - [logStarted,61] - Started MESApplication in 4.742 seconds (JVM running for 5.336)
+22:09:17.760 [restartedMain] INFO  c.q.m.MESApplication - [main,21] - ################MES服务端启动成功################
+22:12:25.116 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:12:28.863 [schedule-pool-1] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[admin][Success][登录成功]
+23:32:28.066 [schedule-pool-1] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+23:33:32.852 [http-nio-8080-exec-17] INFO  c.q.m.f.w.s.UserDetailsServiceImpl - [loadUserByUsername,48] - 登录用户：15650582950 不存在.
+23:33:32.870 [schedule-pool-2] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[15650582950][Error][登录用户：15650582950 不存在]
+23:35:27.707 [schedule-pool-1] INFO  sys-user - [run,55] - [127.0.0.1]内网IP[admin][Success][登录成功]
+23:53:37.399 [SpringApplicationShutdownHook] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+23:53:37.401 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2071] - {dataSource-1} closing ...
+23:53:37.402 [SpringApplicationShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2144] - {dataSource-1} closed
+23:53:39.170 [restartedMain] INFO  c.q.m.MESApplication - [logStarting,55] - Starting MESApplication using Java 17.0.11 on DANIEL with PID 115144 (C:\Users\75780\Desktop\歌尔\qst-mes-server-mysql\mes-admin\target\classes started by 75780 in C:\Users\75780\Desktop\歌尔\qst-mes-server-mysql)
+23:53:39.172 [restartedMain] INFO  c.q.m.MESApplication - [logStartupProfileInfo,681] - The following 1 profile is active: "druid"
+23:53:39.174 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.2.3.Final
+23:53:40.693 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+23:53:40.693 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+23:53:40.693 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.60]
+23:53:40.762 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+23:53:41.756 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,998] - {dataSource-1} inited
+23:53:43.501 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+23:53:43.655 [restartedMain] INFO  c.q.m.MESApplication - [logStarted,61] - Started MESApplication in 4.734 seconds (JVM running for 5.294)
+23:53:43.657 [restartedMain] INFO  c.q.m.MESApplication - [main,21] - ################MES服务端启动成功################
+23:53:59.819 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'

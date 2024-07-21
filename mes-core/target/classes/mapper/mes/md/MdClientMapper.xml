@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qst.mes.core.md.mapper.MdClientMapper">
+    
+    <resultMap type="MdClient" id="MdClientResult">
+        <result property="clientId"    column="client_id"    />
+        <result property="clientCode"    column="client_code"    />
+        <result property="clientName"    column="client_name"    />
+        <result property="clientType"    column="client_type"    />
+        <result property="address"    column="address"    />
+        <result property="contact"    column="contact"    />
+        <result property="phoneNumber"    column="phone_number"    />
+        <result property="creditCode"    column="credit_code"    />
+        <result property="enableFlag"    column="enable_flag"    />
+        <result property="createBy"    column="create_by"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateBy"    column="update_by"    />
+        <result property="updateTime"    column="update_time"    />
+    </resultMap>
+
+    <sql id="selectMdClientVo">
+        select client_id, client_code, client_name, client_type, address, contact, phone_number, credit_code, enable_flag, create_by, create_time, update_by, update_time from md_client
+    </sql>
+
+    <select id="selectMdClientList" parameterType="MdClient" resultMap="MdClientResult">
+        <include refid="selectMdClientVo"/>
+        <where>  
+            <if test="clientCode != null  and clientCode != ''"> and client_code = #{clientCode}</if>
+            <if test="clientName != null  and clientName != ''"> and client_name like concat('%', #{clientName}, '%')</if>
+            <if test="clientType != null  and clientType != ''"> and client_type = #{clientType}</if>
+            <if test="address != null  and address != ''"> and address = #{address}</if>
+            <if test="contact != null  and contact != ''"> and contact = #{contact}</if>
+            <if test="phoneNumber != null  and phoneNumber != ''"> and phone_number = #{phoneNumber}</if>
+            <if test="creditCode != null  and creditCode != ''"> and credit_code = #{creditCode}</if>
+            <if test="enableFlag != null  and enableFlag != ''"> and enable_flag = #{enableFlag}</if>
+        </where>
+    </select>
+    
+    <select id="selectMdClientByClientId" parameterType="Long" resultMap="MdClientResult">
+        <include refid="selectMdClientVo"/>
+        where client_id = #{clientId}
+    </select>
+        
+    <insert id="insertMdClient" parameterType="MdClient" useGeneratedKeys="true" keyProperty="clientId">
+        insert into md_client
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="clientCode != null and clientCode != ''">client_code,</if>
+            <if test="clientName != null and clientName != ''">client_name,</if>
+            <if test="clientType != null">client_type,</if>
+            <if test="address != null">address,</if>
+            <if test="contact != null">contact,</if>
+            <if test="phoneNumber != null">phone_number,</if>
+            <if test="creditCode != null">credit_code,</if>
+            <if test="enableFlag != null and enableFlag != ''">enable_flag,</if>
+            <if test="createBy != null">create_by,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateBy != null">update_by,</if>
+            <if test="updateTime != null">update_time,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="clientCode != null and clientCode != ''">#{clientCode},</if>
+            <if test="clientName != null and clientName != ''">#{clientName},</if>
+            <if test="clientType != null">#{clientType},</if>
+            <if test="address != null">#{address},</if>
+            <if test="contact != null">#{contact},</if>
+            <if test="phoneNumber != null">#{phoneNumber},</if>
+            <if test="creditCode != null">#{creditCode},</if>
+            <if test="enableFlag != null and enableFlag != ''">#{enableFlag},</if>
+            <if test="createBy != null">#{createBy},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateBy != null">#{updateBy},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+         </trim>
+    </insert>
+
+    <update id="updateMdClient" parameterType="MdClient">
+        update md_client
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="clientCode != null and clientCode != ''">client_code = #{clientCode},</if>
+            <if test="clientName != null and clientName != ''">client_name = #{clientName},</if>
+            <if test="clientType != null">client_type = #{clientType},</if>
+            <if test="address != null">address = #{address},</if>
+            <if test="contact != null">contact = #{contact},</if>
+            <if test="phoneNumber != null">phone_number = #{phoneNumber},</if>
+            <if test="creditCode != null">credit_code = #{creditCode},</if>
+            <if test="enableFlag != null and enableFlag != ''">enable_flag = #{enableFlag},</if>
+            <if test="createBy != null">create_by = #{createBy},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateBy != null">update_by = #{updateBy},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+        </trim>
+        where client_id = #{clientId}
+    </update>
+
+    <delete id="deleteMdClientByClientId" parameterType="Long">
+        delete from md_client where client_id = #{clientId}
+    </delete>
+
+    <delete id="deleteMdClientByClientIds" parameterType="String">
+        delete from md_client where client_id in 
+        <foreach item="clientId" collection="array" open="(" separator="," close=")">
+            #{clientId}
+        </foreach>
+    </delete>
+</mapper>
