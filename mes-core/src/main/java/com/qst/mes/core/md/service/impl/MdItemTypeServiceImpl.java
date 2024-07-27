@@ -20,6 +20,15 @@ public class MdItemTypeServiceImpl implements IMdItemTypeService
     @Autowired
     private MdItemTypeMapper mdItemTypeMapper;
 
+    @Override
+    public MdItemType selectItemTypeById(Long itemTypeId) {
+        return mdItemTypeMapper.selectItemTypeById(itemTypeId);
+    }
+
+    @Override
+    public List<MdItemType> listAllExcludingId(Long excludeId) {
+        return mdItemTypeMapper.selectAllExcludingId(excludeId);
+    }
     /**
      * 查询物料产品分类
      * 

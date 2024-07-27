@@ -94,4 +94,12 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
             #{itemTypeId}
         </foreach>
     </delete>
+
+    <select id="selectItemTypeById" resultType="MdItemType">
+        SELECT * FROM md_item_type WHERE item_type_id = #{itemTypeId}
+    </select>
+
+    <select id="selectAllExcludingId" resultType="MdItemType">
+        SELECT * FROM md_item_type WHERE item_type_id != #{excludeId}
+    </select>
 </mapper>

@@ -2,6 +2,8 @@ package com.qst.mes.core.md.controller;
 
 import java.util.List;
 import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,6 +35,20 @@ public class MdItemTypeController extends BaseController
     @Autowired
     private IMdItemTypeService mdItemTypeService;
 
+
+    // 获取单个物料类型的详细信息
+    @GetMapping("/{itemTypeId}/details")
+    public ResponseEntity<MdItemType> getItemType(@PathVariable Long itemTypeId) {
+        MdItemType itemType = mdItemTypeService.selectItemTypeById(itemTypeId);
+        return ResponseEntity.ok(itemType);
+    }
+
+    // 获取除了指定ID之外的所有物料类型列表
+    @GetMapping("/list/exclude/{excludeId}")
+    public ResponseEntity<List<MdItemType>> listExcluding(@PathVariable Long excludeId) {
+        List<MdItemType> itemTypes = mdItemTypeService.listAllExcludingId(excludeId);
+        return ResponseEntity.ok(itemTypes);
+    }
     /**
      * 查询物料产品分类列表
      */
@@ -66,7 +82,6 @@ public class MdItemTypeController extends BaseController
     {
         return AjaxResult.success(mdItemTypeService.selectMdItemTypeByItemTypeId(itemTypeId));
     }
-
     /**
      * 新增物料产品分类
      */

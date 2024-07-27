@@ -11,6 +11,9 @@ import com.qst.mes.core.md.domain.MdItemType;
  */
 public interface IMdItemTypeService 
 {
+
+    MdItemType selectItemTypeById(Long itemTypeId);
+    List<MdItemType> listAllExcludingId(Long excludeId);
     /**
      * 查询物料产品分类
      * 
@@ -58,4 +61,5 @@ public interface IMdItemTypeService
      * @return 结果
      */
     public int deleteMdItemTypeByItemTypeId(Long itemTypeId);
+
 }
